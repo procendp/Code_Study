@@ -1,7 +1,5 @@
 def solution(n):
-    answer = []
-    n = str(n)
-    answer = n.sort(n, reverse=True)
+    answer = int(''.join(sorted(str(n), reverse=True)))
     return answer
 
 print(solution(118372))
