@@ -1,4 +1,4 @@
-def solution(num): # 테스트5만 실패
+def solution(num):
     
     count = 0
     while num != 1: # 주어진 수가 1이 될 때까지
