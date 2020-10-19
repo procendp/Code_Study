@@ -28,42 +28,14 @@ if N % 5 != 0 and N % 3 != 0:
 
 
 
+# 다른 풀이
+# def sugar(N) :
+#     for y in range( (N//3)+1) :
+#         for x in range( (N//5)+1 ) :
+#             if ((5*x + 3*y) == N) :
+#                 return x+y
+            
+#     return -1
 
-
-# if N % 5 == 0 or N % 3 == 0:
-#     if N % 5 == 0:
-#         num.append(N // 5)
-#         num.append((N // 5) // 3)
-#         num_list = list(map(int, num))
-#         total = sum(num_list)
-#         print(total)
-#     elif N % 5 != 0:
-#         print(N // 3)
-
-
-# elif N % 5 != 0 and N % 3 != 0:
-#     print(-1)
-
-
-
-
-
-
-
-
-
-
-# while N % 3 == 0 or N % 5 == 0:
-#     num.append(N // 5)
-#     num.append((N // 5) // 3)
-#     num_list = list(map(int, num))
-#     total = sum(num_list)
-
-#     break
-
-# if N % 3 != 0 or N % 5 != 0:
-#         num.append(-1)
-#         num_list = list(map(int, num))
-#         total = sum(num_list)
-
-# print(total)
+# N = int(input()) #배달해야할 설탕 킬로그램         
+# print(sugar(N))
