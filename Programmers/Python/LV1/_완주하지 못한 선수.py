@@ -8,9 +8,17 @@ def solution(participant, completion):
     
     # answer = participant + completion
     # answer = set(answer)
+    
+    for i in range(len(participant)):
+        if participant[i] == participant[i-1]:
+            answer.append(participant[i])
+    
     answer = [x for x in participant if x not in completion]    # 리스트 빼기 리스트
-
+    
     return answer
+
+    # answer = list(set(participant).intersection(completion))
+    # return answer
 
 print(solution(["leo", "kiki", "eden"], ["eden", "kiki"]))
 print(solution(["marina", "josipa", "nikola", "vinko", "filipa"], ["josipa", "filipa", "marina", "nikola"]))
