@@ -15,3 +15,4 @@ def solution(n):
 
 print(solution(78))
 print(solution(15))
+print(solution(38))
