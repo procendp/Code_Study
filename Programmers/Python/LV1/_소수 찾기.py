@@ -1,24 +1,27 @@
+# 재도전
 def solution(n):
-    length = []
+    array = []
+    some = []
     for i in range(1, n+1): # len(n)
-        for j in range(1,n):
-            if i % j == 0:
-                length.append(i)
+        array.append(i)     # [1, 2, 3, 4, 5]
+    array.remove(array[0])  # [2, 3, 4, 5]  # 1 본인 제외
 
-    return length 
 
-print(solution(10))
+    for j in range(0, len(array)):
+        # print(j)        # 0  1  2  3
+        # print(array[j]) # 2, 3, 4, 5
+        
+        # 약수
+        for k in range(1, j):
+            if array[j] % k == 0:
+                some.append(array[j])
+
+
+    return some
+
+# print(solution(10))
 print(solution(5))
 
-# 1부터 n까지 계산하게 돌린다.. i
-# 1이면 1, 2면 2, 3이면 3... n이면 n까지 나누게 돌린다... j
-# 그 때의 길이를 담고,
-# 그 길이가 2라면 answer에 담는다.
-
-#  length = []                          ...n의 약수 구하기.
-#     for i in range(1, n+1): # len(n)
-#         if n % i == 0:
-#             length.append(i)
 
 
 
