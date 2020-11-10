@@ -16,7 +16,6 @@ def solution(n):
             if array[j] % k == 0:
                 some.append(array[j])
 
-
     return some
 
 # print(solution(10))
