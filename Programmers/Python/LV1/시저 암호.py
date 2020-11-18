@@ -1,4 +1,3 @@
-# 다시 풀어보자
 def solution(s, n):
     s = list(s) # 리스트 자르기
     
