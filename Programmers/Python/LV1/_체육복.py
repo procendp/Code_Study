@@ -1,7 +1,24 @@
 def solution(n, lost, reserve):
-    answer = 0
+    array = []
 
-    return answer
+    for i in range(n): # 리스트를 n개만큼 1로 초기화
+        array.append(1)
+
+    for k in range(len(reserve)):
+        array[reserve[k] + 1] = 2
+
+    for j in range(len(lost)): # lost 인덱스 값을 0으로 바꿔줌
+        array[lost[j] - 1] = 0
+
+    # if
+    
+
+
+
+
+
+
+    return array
 
 print(solution(5, [2,4], [1,3,5]))
 print(solution(5, [2,4], [3]))
