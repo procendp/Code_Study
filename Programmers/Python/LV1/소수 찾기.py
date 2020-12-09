@@ -15,7 +15,7 @@ print(solution(5))
 # 재도전
 # def solution(n):
 #     array = []
-#     some = []
+#     yak = []
 #     for i in range(1, n+1): # len(n)
 #         array.append(i)     # [1, 2, 3, 4, 5]
 #     array.remove(array[0])  # [2, 3, 4, 5]  # 1 본인 제외
@@ -28,9 +28,9 @@ print(solution(5))
 #         # 약수
 #         for k in range(1, j):
 #             if array[j] % k == 0:
-#                 some.append(array[j])
+#                 yak.append(array[j])
 
-#     return some
+#     return yak
 
 # # print(solution(10))
 # print(solution(5))
