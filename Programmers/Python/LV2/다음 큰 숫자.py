@@ -1,17 +1,12 @@
 def solution(n):
-    
-    binary_origin = bin(n) # 0b1001110
-    origin_count = binary_origin.count('1') # n의 1 갯수 /// 4
-    
-    while True:
-        n += 1
-        binary_new = bin(n)
-        new_count = binary_new.count('1')
-        if origin_count == new_count:
-            break
-        return n
 
-    # return n
+    nbinary = bin(n)
+    bcnt = nbinary.count('1')
+    
+    for i in range(n+1, 1000001):
+        if bin(i).count('1') == bcnt:
+            return i
+
 
 print(solution(78))
 print(solution(15))
