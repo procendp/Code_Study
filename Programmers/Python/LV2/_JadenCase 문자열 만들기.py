@@ -1,4 +1,3 @@
-# 다시
 def solution(s):
     answer = ''
     s = s.lower()
