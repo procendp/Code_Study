@@ -1,15 +1,18 @@
 def solution(s):
-    answer = ''
     s = s.lower()
-    delete = s.replace(s[0], '') # s[0] = 3
+    answer = s.title()
 
-    # if s[0][0].isdigit() == True:
-    #     return s[0] + delete.title()
+    if s[0].isdigit() == True: # s[0] = 3
+        answer.replace(answer[1], answer[1].lower())
+        return answer
 
-    # else:
-    #     return s.title()
+    else:
+        
+        return answer
+    
+    # return s
 
-    return s[0]
+    
 
 print(solution("3people unFollowed me"))
 print(solution("for the last week"))
