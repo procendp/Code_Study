@@ -2,16 +2,11 @@ def solution(s):
     s = s.lower()
     answer = s.title()
 
-    if s[0].isdigit() == True: # s[0] = 3
-        answer.replace(answer[1], answer[1].lower())
-        return answer
+    if s[0].isdigit() == True: # s[0]이 숫자라면
+        return answer.replace(answer[1], answer[1].lower())
 
     else:
-        
         return answer
-    
-    # return s
-
     
 
 print(solution("3people unFollowed me"))
