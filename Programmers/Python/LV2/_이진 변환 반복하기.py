@@ -3,6 +3,12 @@ def solution(s):
     answer = list(map(int, s))
     answer.remove(0)
     
+    answer.count(1)
+    for i in answer:
+        
+
+
+    
     return answer
 
 
