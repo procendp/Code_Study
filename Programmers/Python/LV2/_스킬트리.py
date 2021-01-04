@@ -1,3 +1,4 @@
+# 다시
 def solution(skill, skill_trees): # skill : 선행 스킬 순서, skill_trees : 유저들이 만든 스킬트리를 담은 배열
 
     skill_trees = str(skill_trees)
@@ -19,7 +20,7 @@ print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
 
 
 
-# for index in enumerate(skill_trees[j]):
+# for index in enumerate(skill_trees[j]): 
             #     index_num.append(index)
 
 
