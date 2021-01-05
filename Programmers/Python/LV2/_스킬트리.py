@@ -20,7 +20,7 @@ print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
 
 
 
-# for index in enumerate(skill_trees[j]): 
+# for index in enumerate(skill_trees[j]):  
             #     index_num.append(index)
 
 
