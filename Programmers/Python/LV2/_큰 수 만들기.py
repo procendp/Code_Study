@@ -1,8 +1,7 @@
 def solution(number, k):
     answer = list(map(int, number))
-    answer.sort()
-    for i in range(len(answer)):
-        del answer[k:len(answer)]
+    # max_index = answer.index(max(answer))
+    
 
 
     return answer
