@@ -11,9 +11,6 @@ def solution(n):
 
     return jmp
     
-
-
-
 print(solution(5)) # 2
 print(solution(6)) # 2
 print(solution(5000)) # 5
