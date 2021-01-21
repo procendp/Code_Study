@@ -3,7 +3,7 @@ def solution(n):
 
     # 진법 변환 함수 만들기
     while True: 
-        n, rest = divmod(n, 3)
+        n, rest = divmod(n, 3) # n을 3으로 나눴을 시 몫, 나머지
         answer.append(rest)
         if n == 0:
             break
