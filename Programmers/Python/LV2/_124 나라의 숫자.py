@@ -13,7 +13,7 @@ print(solution(11)) # 42
 
 
 
-# 잘못 품
+# incorrect
 # def solution(n):
 #     answer = ""
 #     if n % 3 == 1:
