@@ -8,7 +8,7 @@ def solution(skill, skill_trees): # skill : 선행 스킬 순서, skill_trees : 
                 index = skill_trees.find(skill_trees[j][k])
 
 
-
+ 
     return index
 
 print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
